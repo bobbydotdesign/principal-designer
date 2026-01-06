@@ -27,25 +27,28 @@ When you're working on UI/UX in Claude Code (or Claude.ai with skills enabled), 
 
 ## Installation
 
-### Claude Code (Project-level)
-
+**Global (all projects):**
 ```bash
-# Clone into your project's skills directory
-git clone https://github.com/YOUR_USERNAME/principal-designer.git .claude/skills/principal-designer
+curl -fsSL https://raw.githubusercontent.com/bobbydotdesign/principal-designer/main/install.sh | sh
 ```
 
-Or manually copy the `principal-designer/` folder into `.claude/skills/` in your project.
-
-### Claude Code (Global)
-
+**Project only:**
 ```bash
-# Clone to your home directory for all projects
-git clone https://github.com/YOUR_USERNAME/principal-designer.git ~/.claude/skills/principal-designer
+curl -fsSL https://raw.githubusercontent.com/bobbydotdesign/principal-designer/main/install.sh | sh -s -- --local
 ```
 
-### Claude.ai
+Or clone manually:
+```bash
+# Global
+git clone https://github.com/bobbydotdesign/principal-designer.git ~/.claude/skills/principal-designer
 
-Download the `.skill` file from [Releases](https://github.com/YOUR_USERNAME/principal-designer/releases) and upload it in Claude's skill settings.
+# Project only
+git clone https://github.com/bobbydotdesign/principal-designer.git .claude/skills/principal-designer
+```
+
+**Or download directly:**
+
+Grab the `.skill` file from [Releases](https://github.com/bobbydotdesign/principal-designer/releases) and unzip it into your `.claude/skills/` folder.
 
 ## File Structure
 
